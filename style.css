@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: #ededed;
+}
+body {
+    background-color: #1d3667;
+}
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo {
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+}
+.navbar a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #ededed;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .7s;
+}
+.navbar a:hover {
+    text-decoration: underline;
+}
+.hero {
+    max-width: 1200px;
+    margin-top: 30px;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hero_right img {
+    height: auto;
+    max-width: 100%;
+    border-radius: 50%;
+}
+.hero_left h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.hero_left p {
+    font-size: 16px;
+}
+.hero_left {
+    width: 50%;
+}
+#About_me {
+    height: 200px;
+    width: 100%;
+    background-color: blue;
+}
+#Projects {
+    margin-top: 15px;
+    background-color: aqua;
+    height: 200px;
+    width: 100%;
+}
+#Contact {
+    margin-top: 15px;
+    background-color: azure;
+    height: 200px;
+    width: 100%;
+}

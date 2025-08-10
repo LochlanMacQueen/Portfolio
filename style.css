@@ -8,7 +8,7 @@
     color: #ededed;
 }
 body {
-    background-color: #1d3667;
+    background: radial-gradient(ellipse, #0a1e58 0%, #000000 100%);
 }
 .header {
     position: absolute;
@@ -46,10 +46,16 @@ body {
     justify-content: space-between;
     align-items: center;
 }
-.hero_right img {
-    height: auto;
-    max-width: 100%;
-    border-radius: 50%;
+.hero_img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    border: 1px solid rgba(96, 165, 250, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
 }
 .hero_left h2 {
     font-size: 20px;
@@ -61,12 +67,70 @@ body {
 .hero_left {
     width: 50%;
 }
-#About_me {
-    height: 200px;
-    width: 100%;
-    background-color: blue;
+.hero_right {
+    margin: 40px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
 }
-#Projects {
+
+#about_me {
+    height: 200px;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+.section_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+    width: 100%;
+}
+.about_text {
+    z-index: 2;
+}
+.section_label {
+    color: #60a5fa;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    opacity: 100;
+}
+.section_title {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 700;
+    margin-bottom: 30px;
+    background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.section_description {
+    font-size: 18px;
+    color: #94a3b8;
+    margin-bottom: 40px;
+    max-width: 500px;
+}
+.image_container {
+    position: relative;
+}
+.about_me_img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    border: 1px solid rgba(96, 165, 250, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+#Experience {
     margin-top: 15px;
     background-color: aqua;
     height: 200px;
@@ -77,4 +141,88 @@ body {
     background-color: azure;
     height: 200px;
     width: 100%;
+}
+.footer {
+    width: 100%;
+    background: linear-gradient(135deg, rgba(15, 23, 42, 0.9) 0%, rgba(30, 41, 59, 0.9) 100%);
+    border-top: 1px solid rgba(96, 165, 250, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 60px 40px 40px;
+}
+.footer_container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+.footer_title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.footer_subtitle {
+    color: #94a3b8;
+    font-size: 16px;
+    margin-bottom: 40px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.social_links {
+   display: flex; 
+   justify-content: center;
+   gap: 20px;
+   margin-bottom: 40px;
+   flex-wrap: wrap;
+}
+.social_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background: rgba(96, 165, 250, 0.1);
+    border: 1px solid rgba(96, 165, 250, 0.3);
+    border-radius: 16px;
+    color: #94a3b8;
+    text-decoration: none;
+    backdrop-filter: blur(10px);
+    position: relative;
+    overflow: hidden;
+}
+.social_btn svg {
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
+    z-index: 2;
+    position: relative;
+}
+.contact_info {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+.contact_item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #94a3b8;
+    font-size: 14px;
+    text-decoration: none;
+}
+.contact_item svg {
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
+}
+.footer_bottom {
+    padding-top: 30px;
+    border-top: 1px solid rgba(71, 85, 105, 0.3);
+    color: #64748b;
+    font-size: 14px;
 }
